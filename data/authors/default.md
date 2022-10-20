@@ -1,17 +1,12 @@
 ---
-name: Chanwoong Jeong
-avatar: /static/images/profile.gif
-occupation: Student of Statistics
-company: Dongguk University
-email: jcw7468@naver.com
-# twitter: https://twitter.com/Twitter
+name: Yein Je
+avatar: /static/images/avartar1.png
+# occupation:
+company: 42 seoul
+email: jyi0028@naver.com
+instagram: https://www.instagram.com/y2in_oo/
 # linkedin: https://www.linkedin.com
-instagram: https://instagram.com/chanwoong1
-github: https://github.com/Chanwoong1
+github: https://github.com/
 ---
 
-Tails Azimuth is a professor of atmospheric sciences at the Stanford AI Lab. His research interests includes complexity modelling of tailwinds, headwinds and crosswinds.
-
-He leads the clean energy group which develops 3D air pollution-climate models, writes differential equation solvers, and manufactures titanium plated air ballons. In his free time he bakes raspberry pi.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+이러쿵저러쿵이러쿵저러쿵

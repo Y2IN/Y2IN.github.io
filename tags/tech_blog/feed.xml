@@ -11,9 +11,9 @@
       <atom:link href="https://tailwind-nextjs-starter-blog.vercel.app/tags/tech_blog/feed.xml" rel="self" type="application/rss+xml"/>
       
   <item>
-    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/deriving-ols-estimator</guid>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/nextjs_blog</guid>
     <title>next.js - 개인 블로그 만들기</title>
-    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/deriving-ols-estimator</link>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/nextjs_blog</link>
     <description>How to make tech blog</description>
     <pubDate>Tue, 20 Sep 2022 00:00:00 GMT</pubDate>
     <author>jyi0028@naver.com (Yein Je)</author>

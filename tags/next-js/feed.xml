@@ -7,9 +7,19 @@
       <language>ko</language>
       <managingEditor>jyi0028@naver.com (Yein Je)</managingEditor>
       <webMaster>jyi0028@naver.com (Yein Je)</webMaster>
-      <lastBuildDate>Sat, 07 Aug 2021 15:32:14 GMT</lastBuildDate>
+      <lastBuildDate>Tue, 20 Sep 2022 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://tailwind-nextjs-starter-blog.vercel.app/tags/next-js/feed.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/deriving-ols-estimator</guid>
+    <title>next.js - 개인 블로그 만들기</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/deriving-ols-estimator</link>
+    <description>How to make tech blog</description>
+    <pubDate>Tue, 20 Sep 2022 00:00:00 GMT</pubDate>
+    <author>jyi0028@naver.com (Yein Je)</author>
+    <category>next js</category><category>tech_blog</category><category>study</category>
+  </item>
+
   <item>
     <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/new-features-in-v1</guid>
     <title>New features in v1</title>
@@ -38,16 +48,6 @@
     <pubDate>Tue, 12 Jan 2021 00:00:00 GMT</pubDate>
     <author>jyi0028@naver.com (Yein Je)</author>
     <category>next-js</category><category>tailwind</category><category>guide</category>
-  </item>
-
-  <item>
-    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/deriving-ols-estimator</guid>
-    <title>Deriving the OLS Estimator</title>
-    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/deriving-ols-estimator</link>
-    <description>How to derive the OLS Estimator with matrix notation and a tour of math typesetting using markdown with the help of KaTeX.</description>
-    <pubDate>Mon, 21 Dec 2020 00:00:00 GMT</pubDate>
-    <author>jyi0028@naver.com (Yein Je)</author>
-    <category>next js</category><category>math</category><category>ols</category>
   </item>
 
   <item>

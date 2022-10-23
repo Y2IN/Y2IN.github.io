@@ -7,9 +7,19 @@
       <language>ko</language>
       <managingEditor>jyi0028@naver.com (Yein Je)</managingEditor>
       <webMaster>jyi0028@naver.com (Yein Je)</webMaster>
-      <lastBuildDate>Sat, 07 Aug 2021 15:32:14 GMT</lastBuildDate>
+      <lastBuildDate>Sun, 23 Oct 2022 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://tailwind-nextjs-starter-blog.vercel.app/feed.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/code-sample</guid>
+    <title>Sample .md file</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/code-sample</link>
+    <description>Example of a markdown file with code blocks and syntax highlighting</description>
+    <pubDate>Sun, 23 Oct 2022 00:00:00 GMT</pubDate>
+    <author>jyi0028@naver.com (Yein Je)</author>
+    <category>markdown</category><category>code</category><category>features</category>
+  </item>
+
   <item>
     <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/new-features-in-v1</guid>
     <title>New features in v1</title>
@@ -88,16 +98,6 @@
     <pubDate>Sat, 15 Jul 2017 00:00:00 GMT</pubDate>
     <author>jyi0028@naver.com (Yein Je)</author>
     <category>holiday</category><category>canada</category><category>images</category>
-  </item>
-
-  <item>
-    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/code-sample</guid>
-    <title>Sample .md file</title>
-    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/code-sample</link>
-    <description>Example of a markdown file with code blocks and syntax highlighting</description>
-    <pubDate>Tue, 08 Mar 2016 00:00:00 GMT</pubDate>
-    <author>jyi0028@naver.com (Yein Je)</author>
-    <category>markdown</category><category>code</category><category>features</category>
   </item>
 
     </channel>

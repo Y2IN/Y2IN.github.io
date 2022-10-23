@@ -40,15 +40,5 @@
     <category>next js</category><category>guide</category>
   </item>
 
-  <item>
-    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/github-markdown-guide</guid>
-    <title>Markdown Guide</title>
-    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/github-markdown-guide</link>
-    <description>Markdown cheatsheet for all your blogging needs - headers, lists, images, tables and more! An illustrated guide based on GitHub Flavored Markdown.</description>
-    <pubDate>Fri, 11 Oct 2019 00:00:00 GMT</pubDate>
-    <author>jyi0028@naver.com (Yein Je)</author>
-    <category>github</category><category>guide</category>
-  </item>
-
     </channel>
   </rss>

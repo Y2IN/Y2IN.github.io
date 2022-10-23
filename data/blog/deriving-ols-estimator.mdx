@@ -1,141 +1,46 @@
 ---
-title: Deriving the OLS Estimator
-date: '2020-12-21'
-tags: ['next js', 'math', 'ols']
+title: next.js - 개인 블로그 만들기
+date: '2022-09-20'
+tags: ['next js', 'tech_blog', 'study']
 draft: false
-summary: 'How to derive the OLS Estimator with matrix notation and a tour of math typesetting using markdown with the help of KaTeX.'
+summary: 'How to make tech blog'
 ---
 
-# Introduction
+개인 기술 블로그를 만들고 싶어서 Next.js로 만들어 보기로 했다.
 
-Parsing and display of math equations is included in this blog template. Parsing of math is enabled by `remark-math` and `rehype-katex`.
-KaTeX and its associated font is included in `_document.js` so feel free to use it on any page.
-^[For the full list of supported TeX functions, check out the [KaTeX documentation](https://katex.org/docs/supported.html)]
+# Next.js란?
 
-Inline math symbols can be included by enclosing the term between the `$` symbol.
+Next.js는 React 라이브러리의 프레임워크이다. [공식 홈페이지](https://nextjs.org/learn/basics/create-nextjs-app)에서 learn course를 제공하고 있는데 learn course만한 글이 없는 것 같다.
 
-Math code blocks are denoted by `$$`.
+## Next.js를 통해 얻는 가장 큰 장점은?
 
-If you intend to use the `$` sign instead of math, you can escape it (`\$`), or specify the HTML entity (`&dollar;`) [^2]
+SEO(Search Engine Optimization)를 위한 Server-Side Rendering(SSR)을 가능하게 해준다.
 
-Inline or manually enumerated footnotes are also supported. Click on the links above to see them in action.
+![Alt text](https://github.com/Y2IN/Y2IN.github.io/blob/main/public/static/images/blog_project/pre-rendering.png?raw=true)
 
-[^2]: \$10 and &dollar;20.
+기본적으로 React는 Client Side Rendering(CSR)을 한다. 이는 위 그림처럼 웹사이트를 요청했을 때 빈 html을 가져와 script를 로딩하기 때문에, 첫 로딩 시간도 오래걸리고 Search Engine Optimization(SEO)에 취약하다는 단점이 있다.
 
-# Deriving the OLS Estimator
+# create-next-app
 
-Using matrix notation, let $n$ denote the number of observations and $k$ denote the number of regressors.
+기본적으로 next.js를 사용하기 위해서는 node.js 설치가 필요한데, node.js는 간편하게 설치할 수 있다.
 
-The vector of outcome variables $\mathbf{Y}$ is a $n \times 1$ matrix,
-
-```tex
-\mathbf{Y} = \left[\begin{array}
-  {c}
-  y_1 \\
-  . \\
-  . \\
-  . \\
-  y_n
-\end{array}\right]
+```zsh
+npx create-next-app --typescript
+# --typescript를 입력하지 않으면 javascript로 스크립트가 생성된다.
 ```
 
-$$
-\mathbf{Y} = \left[\begin{array}
-  {c}
-  y_1 \\
-  . \\
-  . \\
-  . \\
-  y_n
-\end{array}\right]
-$$
+# 가상 환경 실행하기
 
-The matrix of regressors $\mathbf{X}$ is a $n \times k$ matrix (or each row is a $k \times 1$ vector),
+```zsh
+npm run build
 
-```latex
-\mathbf{X} = \left[\begin{array}
-  {ccccc}
-  x_{11} & . & . & . & x_{1k} \\
-  . & . & . & . & .  \\
-  . & . & . & . & .  \\
-  . & . & . & . & .  \\
-  x_{n1} & . & . & . & x_{nn}
-\end{array}\right] =
-\left[\begin{array}
-  {c}
-  \mathbf{x}'_1 \\
-  . \\
-  . \\
-  . \\
-  \mathbf{x}'_n
-\end{array}\right]
+npm start
+//or
+npm run dev
 ```
 
-$$
-\mathbf{X} = \left[\begin{array}
-  {ccccc}
-  x_{11} & . & . & . & x_{1k} \\
-  . & . & . & . & .  \\
-  . & . & . & . & .  \\
-  . & . & . & . & .  \\
-  x_{n1} & . & . & . & x_{nn}
-\end{array}\right] =
-\left[\begin{array}
-  {c}
-  \mathbf{x}'_1 \\
-  . \\
-  . \\
-  . \\
-  \mathbf{x}'_n
-\end{array}\right]
-$$
+위의 명령어를 통해 로컬 환경에서 웹 페이지를 띄워볼 수 있다.
 
-The vector of error terms $\mathbf{U}$ is also a $n \times 1$ matrix.
+여기서 https://localhost:3000 링크로 들어가면 /pages/index.js에서 설정된 화면이 띄워지게 된다.
 
-At times it might be easier to use vector notation. For consistency, I will use the bold small x to denote a vector and capital letters to denote a matrix. Single observations are denoted by the subscript.
-
-## Least Squares
-
-**Start**:  
-$$y_i = \mathbf{x}'_i \beta + u_i$$
-
-**Assumptions**:
-
-1. Linearity (given above)
-2. $E(\mathbf{U}|\mathbf{X}) = 0$ (conditional independence)
-3. rank($\mathbf{X}$) = $k$ (no multi-collinearity i.e. full rank)
-4. $Var(\mathbf{U}|\mathbf{X}) = \sigma^2 I_n$ (Homoskedascity)
-
-**Aim**:  
-Find $\beta$ that minimises the sum of squared errors:
-
-$$
-Q = \sum_{i=1}^{n}{u_i^2} = \sum_{i=1}^{n}{(y_i - \mathbf{x}'_i\beta)^2} = (Y-X\beta)'(Y-X\beta)
-$$
-
-**Solution**:  
-Hints: $Q$ is a $1 \times 1$ scalar, by symmetry $\frac{\partial b'Ab}{\partial b} = 2Ab$.
-
-Take matrix derivative w.r.t $\beta$:
-
-```tex
-\begin{aligned}
-  \min Q           & = \min_{\beta} \mathbf{Y}'\mathbf{Y} - 2\beta'\mathbf{X}'\mathbf{Y} +
-  \beta'\mathbf{X}'\mathbf{X}\beta \\
-                   & = \min_{\beta} - 2\beta'\mathbf{X}'\mathbf{Y} + \beta'\mathbf{X}'\mathbf{X}\beta \\
-  \text{[FOC]}~~~0 & =  - 2\mathbf{X}'\mathbf{Y} + 2\mathbf{X}'\mathbf{X}\hat{\beta}                  \\
-  \hat{\beta}      & = (\mathbf{X}'\mathbf{X})^{-1}\mathbf{X}'\mathbf{Y}                              \\
-                   & = (\sum^{n} \mathbf{x}_i \mathbf{x}'_i)^{-1} \sum^{n} \mathbf{x}_i y_i
-\end{aligned}
-```
-
-$$
-\begin{aligned}
-  \min Q           & = \min_{\beta} \mathbf{Y}'\mathbf{Y} - 2\beta'\mathbf{X}'\mathbf{Y} +
-  \beta'\mathbf{X}'\mathbf{X}\beta \\
-                   & = \min_{\beta} - 2\beta'\mathbf{X}'\mathbf{Y} + \beta'\mathbf{X}'\mathbf{X}\beta \\
-  \text{[FOC]}~~~0 & =  - 2\mathbf{X}'\mathbf{Y} + 2\mathbf{X}'\mathbf{X}\hat{\beta}                  \\
-  \hat{\beta}      & = (\mathbf{X}'\mathbf{X})^{-1}\mathbf{X}'\mathbf{Y}                              \\
-                   & = (\sum^{n} \mathbf{x}_i \mathbf{x}'_i)^{-1} \sum^{n} \mathbf{x}_i y_i
-\end{aligned}
-$$
+이 화면이 뜨면 로컬 환경에서 웹 페이지가 제대로 실행되고 있다는 뜻이고, 실시간으로 수정을 하며 블로그를 만들 수 있다.

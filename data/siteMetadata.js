@@ -1,5 +1,5 @@
 const siteMetadata = {
-  title: 'yein_tech_blog',
+  title: 'YEINTECH',
   author: 'Yein Je',
   headerTitle: 'YEINTECH',
   description: "Hi, I'm Yein",

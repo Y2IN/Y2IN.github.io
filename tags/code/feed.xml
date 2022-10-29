@@ -7,7 +7,7 @@
       <language>ko</language>
       <managingEditor>jyi0028@naver.com (Yein Je)</managingEditor>
       <webMaster>jyi0028@naver.com (Yein Je)</webMaster>
-      <lastBuildDate>Sun, 23 Oct 2022 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Fri, 02 Sep 2022 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://tailwind-nextjs-starter-blog.vercel.app/tags/code/feed.xml" rel="self" type="application/rss+xml"/>
       
   <item>
@@ -15,7 +15,7 @@
     <title>Sample .md file</title>
     <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/code-sample</link>
     <description>Example of a markdown file with code blocks and syntax highlighting</description>
-    <pubDate>Sun, 23 Oct 2022 00:00:00 GMT</pubDate>
+    <pubDate>Fri, 02 Sep 2022 00:00:00 GMT</pubDate>
     <author>jyi0028@naver.com (Yein Je)</author>
     <category>markdown</category><category>code</category><category>features</category>
   </item>

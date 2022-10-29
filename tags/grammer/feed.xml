@@ -1,0 +1,24 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>YEINTECH</title>
+      <link>https://tailwind-nextjs-starter-blog.vercel.app/blog</link>
+      <description>Hi, I&#39;m Yein</description>
+      <language>ko</language>
+      <managingEditor>jyi0028@naver.com (Yein Je)</managingEditor>
+      <webMaster>jyi0028@naver.com (Yein Je)</webMaster>
+      <lastBuildDate>Sun, 23 Oct 2022 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://tailwind-nextjs-starter-blog.vercel.app/tags/grammer/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/JS_STUDY/var,let,const</guid>
+    <title>var, let, const의 차이점</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/JS_STUDY/var,let,const</link>
+    <description>변수 선언 방식인 var, let, const에 대해</description>
+    <pubDate>Sun, 23 Oct 2022 00:00:00 GMT</pubDate>
+    <author>jyi0028@naver.com (Yein Je)</author>
+    <category>JavaScript</category><category>grammer</category><category>function</category>
+  </item>
+
+    </channel>
+  </rss>

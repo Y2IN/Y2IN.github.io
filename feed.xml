@@ -11,13 +11,13 @@
       <atom:link href="https://tailwind-nextjs-starter-blog.vercel.app/feed.xml" rel="self" type="application/rss+xml"/>
       
   <item>
-    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/code-sample</guid>
-    <title>Sample .md file</title>
-    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/code-sample</link>
-    <description>Example of a markdown file with code blocks and syntax highlighting</description>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/JS_STUDY/var,let,const</guid>
+    <title>var, let, const의 차이점</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/JS_STUDY/var,let,const</link>
+    <description>변수 선언 방식인 var, let, const에 대해</description>
     <pubDate>Sun, 23 Oct 2022 00:00:00 GMT</pubDate>
     <author>jyi0028@naver.com (Yein Je)</author>
-    <category>markdown</category><category>code</category><category>features</category>
+    <category>JavaScript</category><category>grammer</category><category>function</category>
   </item>
 
   <item>
@@ -28,6 +28,16 @@
     <pubDate>Tue, 20 Sep 2022 00:00:00 GMT</pubDate>
     <author>jyi0028@naver.com (Yein Je)</author>
     <category>next js</category><category>tech_blog</category><category>study</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/code-sample</guid>
+    <title>Sample .md file</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/code-sample</link>
+    <description>Example of a markdown file with code blocks and syntax highlighting</description>
+    <pubDate>Fri, 02 Sep 2022 00:00:00 GMT</pubDate>
+    <author>jyi0028@naver.com (Yein Je)</author>
+    <category>markdown</category><category>code</category><category>features</category>
   </item>
 
     </channel>

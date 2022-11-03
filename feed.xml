@@ -30,15 +30,5 @@
     <category>next js</category><category>tech_blog</category><category>study</category>
   </item>
 
-  <item>
-    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/code-sample</guid>
-    <title>Sample .md file</title>
-    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/code-sample</link>
-    <description>Example of a markdown file with code blocks and syntax highlighting</description>
-    <pubDate>Fri, 02 Sep 2022 00:00:00 GMT</pubDate>
-    <author>jyi0028@naver.com (Yein Je)</author>
-    <category>markdown</category><category>code</category><category>features</category>
-  </item>
-
     </channel>
   </rss>
